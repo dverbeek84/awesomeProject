@@ -1,0 +1,7 @@
+### Create a order
+POST http://127.0.0.1:8081/api/v1/order
+Accept: application/json
+
+{
+  "ApplicationID": 1
+}

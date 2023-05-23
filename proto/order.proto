@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "./pg";
+
+package pb;
+
+service OrderService {
+  rpc UpdateOrderToDone(OrderRequest) returns (OrderResponse) {};
+}
+
+message OrderRequest{
+  string Id = 1;
+  string State = 2;
+}
+
+message OrderResponse{}
